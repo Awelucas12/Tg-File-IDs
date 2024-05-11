@@ -5,9 +5,9 @@ from pyrogram.types import Message
 
 # Replace 'YOUR_API_ID', 'YOUR_API_HASH', and 'YOUR_BOT_TOKEN' with your actual values
 
-api_id = 
-api_hash = ''
-bot_token = ''
+api_id = 25595324
+api_hash = '0102b3dbf501dc0fb3176d4c9685eec8'
+bot_token = '7092843530:AAF4VICBlEumP9FR7Sa0cHsj_8GlVqmjils'
 
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
@@ -35,11 +35,11 @@ async def start_command(bot, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
           [
-          InlineKeyboardButton('📍 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/NT_BOT_CHANNEL'),
+          InlineKeyboardButton('📍 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/zionmainchannel'),
       ],
       [
-          InlineKeyboardButton('👩‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫', url='https://t.me/LISA_FAN_LK'),
-          InlineKeyboardButton('🚨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/NT_BOTS_SUPPORT'),
+          InlineKeyboardButton('👩‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫', url='https://t.me/zion_owner'),
+          InlineKeyboardButton('🚨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/zionsupportchat'),
           ],
           [
           InlineKeyboardButton('⛔️ 𝐂𝐋𝐎𝐒𝐄', callback_data='cancel')
