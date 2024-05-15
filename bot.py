@@ -134,3 +134,16 @@ async def handle_audio(bot, message: Message):
 if __name__ == "__main__":
     print("alive")
     app.run()
+@BotzHub.on(events.NewMessage(pattern="^/start$"))
+async def strt(event):
+    await event.reply(
+        f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @BotzHub :)",
+        buttons=[
+            Button.url("Channel", url=f"https://t.me/{channel}"),
+            Button.url("Repository", url="https://github.com/xditya/ForceSub"),
+        ],
+    )
+
+
+log.info("ForceSub Bot has started as @%s.\nDo visit @BotzHub!", bot_self.username)
+BotzHub.run_until_disconnected()
